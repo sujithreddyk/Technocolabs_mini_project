@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div class="login">
+    <form action="{{url_for('predict')}}" method="post">
+        <input type="text" name="LIMIT_BAL" placeholder="LIMIT_BAL" required="required"/>
+        <input type="text" name="EDUCATION" placeholder="EDUCATION" required="required"/>
+        <input type="text" name="MARRIAGE" placeholder="MARRIAGE" required="required"/>
+        <input type="text" name="AGE" placeholder="AGE" required="required"/>
+        <input type="text" name="PAY_1" placeholder="PAY_1" required="required"/>
+        <input type="text" name="BILL_AMT1" placeholder="BILL_AMT1" required="required"/>
+        <input type="text" name="BILL_AMT2" placeholder="BILL_AMT2" required="required"/>
+        <input type="text" name="BILL_AMT3" placeholder="BILL_AMT3" required="required"/>
+        <input type="text" name="BILL_AMT4" placeholder="BILL_AMT4" required="required"/>
+        <input type="text" name="BILL_AMT5" placeholder="BILL_AMT5" required="required"/>
+        <input type="text" name="BILL_AMT6" placeholder="BILL_AMT6" required="required"/>
+        <input type="text" name="PAY_AMT1" placeholder="PAY_AMT1" required="required"/>
+        <input type="text" name="PAY_AMT2" placeholder="PAY_AMT2" required="required"/>
+        <input type="text" name="PAY_AMT3" placeholder="PAY_AMT3" required="required"/>
+        <input type="text" name="PAY_AMT4" placeholder="PAY_AMT4" required="required"/>
+        <input type="text" name="PAY_AMT5" placeholder="PAY_AMT5" required="required"/>
+        <input type="text" name="PAY_AMT6" placeholder="PAY_AMT6" required="required"/>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+
+    </form>
+    <br>
+    <br>
+</div>
+{{prediction_text}}
+</body>
+</html>
